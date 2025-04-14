@@ -1,0 +1,224 @@
+.select-info {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.select-info h2 {
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.url-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 40px 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+  outline: none;
+}
+
+.input-group input.error {
+  border-color: #ef4444;
+}
+
+.clear-button {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clear-button:hover {
+  color: #4b5563;
+}
+
+.error-message {
+  color: #ef4444;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+button[type="submit"] {
+  padding: 12px 20px;
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #4338ca;
+}
+
+button[type="submit"]:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.extracted-text {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f9fafb;
+}
+
+.extracted-text h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #111827;
+}
+
+.extracted-text pre {
+  white-space: pre-wrap;
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #333;
+  display: block;
+  text-align: left;
+}
+
+.poem-display {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.poem-title {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.poem-author {
+  font-style: italic;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 32px;
+  color: #4b5563;
+}
+
+.poem-content {
+  display: block;
+  text-align: left;
+}
+
+.text-controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.text-controls button {
+  padding: 8px 16px;
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.text-controls button:hover {
+  background-color: #e5e7eb;
+}
+
+.edit-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-textarea {
+  width: 100%;
+  min-height: 200px;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.edit-textarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.2);
+  outline: none;
+}
+
+.edit-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-buttons button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-buttons button:first-child {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+}
+
+.edit-buttons button:first-child:hover {
+  background-color: #4338ca;
+}
+
+.edit-buttons button:last-child {
+  background-color: #f3f4f6;
+  border: 1px solid #d1d5db;
+}
+
+.edit-buttons button:last-child:hover {
+  background-color: #e5e7eb;
+}
