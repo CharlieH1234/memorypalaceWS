@@ -116,6 +116,10 @@ button[type="submit"]:disabled {
   color: #333;
   display: block;
   text-align: left;
+  overflow-x: visible;
+  overflow-y: visible;
+  max-width: 100%;
+  width: 100%;
 }
 
 .poem-display {
@@ -123,7 +127,41 @@ button[type="submit"]:disabled {
   margin: 0 auto;
   font-family: 'Georgia', serif;
   line-height: 1.8;
-  white-space: pre-wrap;
+  text-align: left;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.poem-stanza {
+  margin-bottom: 2em;
+}
+
+.poem-line {
+  display: block;
+  min-height: 1.5em;
+  white-space: normal;
+  font-size: 16px;
+  margin-bottom: 0.5em;
+  width: 100%;
+  overflow: visible;
+  position: relative;
+  padding-left: 0; /* Ensure no indentation */
+}
+
+.poem-line.indented {
+  padding-left: 0;
+}
+
+.poem-line.empty {
+  height: 1.5em;
+}
+
+.stanza-break {
+  height: 1.5em;
+  margin-bottom: 1em;
 }
 
 .poem-title {
@@ -221,4 +259,30 @@ button[type="submit"]:disabled {
 
 .edit-buttons button:last-child:hover {
   background-color: #e5e7eb;
+}
+
+.extracted-poem {
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+  text-align: left;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.poem-line-content {
+  margin: 0;
+  padding: 0;
+  white-space: pre-wrap;
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  line-height: 1.8;
+  overflow-wrap: break-word;
+  word-break: normal;
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  display: block;
 }
